@@ -1,0 +1,43 @@
+<div class="main">
+  <div class="sidepanel">
+    <app-upload-component></app-upload-component>
+  </div>
+  <app-playlist
+    [tracks]="tracks"
+    (selected)="select($event)"
+    [currentTrack]="currentTrack"
+  ></app-playlist>
+</div>
+<div class="fixed-bottom footer row">
+  <div class="col-3 controls-bar">
+    <i class="fas fa-step-backward fa-2x" (click)="prev()"></i>
+    <i class="fas fa-play fa-2x" (click)="play()" *ngIf="audio.paused"></i>
+    <i class="fas fa-pause fa-2x" (click)="pause()" *ngIf="!audio.paused"></i>
+    <i class="fas fa-step-forward fa-2x" (click)="next()"></i>
+  </div>
+  <div class="col-6 title-bar">
+    <div id="track-title"></div>
+    <input
+      class="slider"
+      type="range"
+      id="progress"
+      min="0"
+      max="3000"
+      (input)="drag($event.target.value)"
+      [value]="position"
+    />
+  </div>
+  <div class="col-3 volume-bar">
+    <i class="fas fa-redo fa-2x"></i>
+    <i class="fas fa-volume-up fa-2x" style="width: 40px" *ngIf="volume"></i>
+    <i class="fas fa-volume-off fa-2x" style="width: 40px" *ngIf="!volume"></i>
+    <input
+      type="range"
+      id="volume"
+      min="0"
+      max="100"
+      value="100"
+      [(ngModel)]="volume"
+    />
+  </div>
+</div>

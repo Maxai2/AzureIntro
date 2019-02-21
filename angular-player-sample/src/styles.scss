@@ -1,0 +1,58 @@
+.footer {
+  box-shadow: 0 -1px 3px 0 gray;
+  height: 70px;
+  background-color: white;
+}
+body {
+  height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.sidepanel {
+  width: 250px;
+  background-color: rgb(54, 54, 54);
+}
+.controls-bar,
+.volume-bar,
+.title-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+tbody tr {
+  cursor: pointer;
+}
+
+.volume-bar .fas,
+.controls-bar .fas {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.volume-bar .fas:hover,
+.controls-bar .fas:hover {
+  color: rgb(26, 132, 194);
+}
+
+.toggled {
+  color: rgb(26, 132, 194);
+}
+
+.title-bar {
+  flex-direction: column;
+
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.selected {
+  background-color: lightgray;
+}
+
+#progress {
+  width: 100%;
+}
