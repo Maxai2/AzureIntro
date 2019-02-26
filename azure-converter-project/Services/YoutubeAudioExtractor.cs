@@ -15,7 +15,7 @@ namespace VideoConverter.Api.Services {
 
             var inputFile = new MediaFile { Filename = tempFilePath };
             var outputFile = new MediaFile { Filename = $"{tempFilePath}.mp3" };
-            using (var engine = new Engine ("./ffmpeg.exe")) {
+            using (var engine = new Engine ()) {
                 engine.GetMetadata (inputFile);
                 engine.Convert (inputFile, outputFile);
             }

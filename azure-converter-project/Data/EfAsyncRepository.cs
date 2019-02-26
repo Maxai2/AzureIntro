@@ -7,32 +7,32 @@ using Microsoft.EntityFrameworkCore;
 using VideoConverter.Api.Models;
 
 namespace VideoConverter.Api.Data {
-    public class EfAsyncRepository : IAsyncRepository {
-        private readonly TracksDbContext _db;
-        public EfAsyncRepository (TracksDbContext db) {
+    public class EfAsyncRepository<TEntity> 
+        : IAsyncRepository<TEntity> where TEntity : ModelBase, new () {
+        private readonly DbContext _db;
+        public EfAsyncRepository (DbContext db) {
             _db = db;
         }
-        public async Task Create (Track track) {
-            await _db.Tracks.AddAsync (track);
-            await _db.SaveChangesAsync ();
+        public Task Create (TEntity entity) {
+            _db.Set<TEntity> ().Add (entity);
+            return _db.SaveChangesAsync ();
         }
-        public async Task Remove (Track track) {
-            _db.Tracks.Remove (track);
-            await _db.SaveChangesAsync ();
+        public Task Remove (TEntity entity) {
+            _db.Set<TEntity> ().Remove (entity);
+            return _db.SaveChangesAsync ();
         }
-        public async Task Update (Track track) {
-            _db.Tracks.Update (track);
-            await _db.SaveChangesAsync ();
+        public Task Update (TEntity entity) {
+            _db.Set<TEntity> ().Update (entity);
+            return _db.SaveChangesAsync ();
         }
-        public async Task<Track> Find (int id) {
-            return await _db.Tracks
-                .FirstOrDefaultAsync (t => t.Id == id);
+        public Task<TEntity> Find (string id) {
+            return _db.Set<TEntity> ().FirstOrDefaultAsync (t => t.Id == id);
         }
-        public async Task<IEnumerable<Track>> Get () {
-            return await _db.Tracks.ToListAsync ();
+        public async Task<IEnumerable<TEntity>> Get () {
+            return await _db.Set<TEntity> ().ToListAsync ();
         }
-        public async Task<IEnumerable<Track>> Get (Expression<Func<Track, bool>> pred) {
-            return await _db.Tracks.Where (pred).ToListAsync ();
+        public async Task<IEnumerable<TEntity>> Get (Expression<Func<TEntity, bool>> pred) {
+            return await _db.Set<TEntity> ().Where (pred).ToListAsync ();
         }
     }
 }
