@@ -78,7 +78,7 @@ namespace VideoConverter.Api {
                 opts.UseSqlServer (GetSecretConnectionString ());
             });
             services.AddScoped<DbContext, TracksDbContext> ();
-            services.AddScoped (typeof (IAsyncRepository<>), typeof (EfAsyncRepository<>));
+            services.AddScoped (typeof (IAsyncRepository<>), typeof (CosmosDbAsyncRepository<>));
             services.AddScoped<ITracksService, TracksService> ();
             services.AddScoped<IYoutubeAudioExtractor, YoutubeAudioExtractor> ();
             services.AddScoped<IMediaStorageService, AzureMediaStorageService> ();

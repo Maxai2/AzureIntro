@@ -33,7 +33,8 @@ namespace VideoConverter.Api.Data {
 
         public async Task<IEnumerable<TEntity>> Get () {
             var query = _client.CreateDocumentQuery<TEntity> (_collectionUri, new FeedOptions {
-                MaxItemCount = -1
+                MaxItemCount = -1,
+                EnableCrossPartitionQuery = true
             }).AsDocumentQuery ();
             var items = new List<TEntity> ();
             while (query.HasMoreResults) {
@@ -44,7 +45,8 @@ namespace VideoConverter.Api.Data {
 
         public async Task<IEnumerable<TEntity>> Get (Expression<Func<TEntity, bool>> predicate) {
             var query = _client.CreateDocumentQuery<TEntity> (_collectionUri, new FeedOptions {
-                MaxItemCount = -1
+                MaxItemCount = -1,
+                EnableCrossPartitionQuery = true
             }).Where (predicate).AsDocumentQuery ();
             var items = new List<TEntity> ();
             while (query.HasMoreResults) {

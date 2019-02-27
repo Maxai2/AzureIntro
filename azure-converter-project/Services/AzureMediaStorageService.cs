@@ -14,8 +14,8 @@ namespace VideoConverter.Api.Services {
         private readonly CloudBlobContainer _cloudBlobContainer;
         private readonly AzureStorageAccountOptions _options;
 
-        public AzureMediaStorageService (IOptions<AzureStorageAccountOptions> options) {
-            _options = options.Value;
+        public AzureMediaStorageService (AzureStorageAccountOptions options) {
+            _options = options;
             if (!CloudStorageAccount.TryParse (_options.ConnectionString, out _cloudStorageAccount)) {
                 throw new Exception ("Invalid connection string for Azure Storage Account");
             }

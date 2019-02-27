@@ -28,7 +28,8 @@ namespace VideoConverter.Api.Services {
             if (json != null) {
                 tracks = JsonConvert.DeserializeObject<IEnumerable<Track>> (json);
             } else {
-                json = JsonConvert.SerializeObject (await _repository.Get ());
+                tracks = await _repository.Get ();
+                json = JsonConvert.SerializeObject (tracks);
                 await _cache.SetStringAsync ("tracks", json, new DistributedCacheEntryOptions {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds (30)
                 });
