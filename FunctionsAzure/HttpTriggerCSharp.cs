@@ -7,6 +7,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Microsoft.WindowsAzure.Storage.Queue;
 
 namespace Company.Function
 {
@@ -15,7 +16,7 @@ namespace Company.Function
         [FunctionName("HttpTriggerCSharp")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
-            [Blob("files/{rand-guid}.txt", FileAccess.Write, Connection="musicplayersg_STORAGE")] Stream blob,
+            [Queue("messages", Connection = "musicplayersg_STORAGE")] ICollector<string> message,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
@@ -27,9 +28,7 @@ namespace Company.Function
             name = name ?? data?.name;
 
             if (name != null) {
-                var writer = new StreamWriter(blob);
-                writer.Write(name);
-                writer.Close();
+                message.Add(name);
                 return (ActionResult)new OkObjectResult($"Hello, {name}");
             }
 

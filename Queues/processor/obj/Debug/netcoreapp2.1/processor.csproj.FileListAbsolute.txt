@@ -1,0 +1,11 @@
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\bin\Debug\netcoreapp2.1\processor.deps.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\bin\Debug\netcoreapp2.1\processor.runtimeconfig.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\bin\Debug\netcoreapp2.1\processor.runtimeconfig.dev.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\bin\Debug\netcoreapp2.1\processor.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\bin\Debug\netcoreapp2.1\processor.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\obj\Debug\netcoreapp2.1\processor.csprojAssemblyReference.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\obj\Debug\netcoreapp2.1\processor.csproj.CoreCompileInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\obj\Debug\netcoreapp2.1\processor.AssemblyInfoInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\obj\Debug\netcoreapp2.1\processor.AssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\obj\Debug\netcoreapp2.1\processor.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\processor\obj\Debug\netcoreapp2.1\processor.pdb

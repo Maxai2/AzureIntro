@@ -1,0 +1,11 @@
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\bin\Debug\netcoreapp2.1\front.deps.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\bin\Debug\netcoreapp2.1\front.runtimeconfig.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\bin\Debug\netcoreapp2.1\front.runtimeconfig.dev.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\bin\Debug\netcoreapp2.1\front.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\bin\Debug\netcoreapp2.1\front.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\obj\Debug\netcoreapp2.1\front.csprojAssemblyReference.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\obj\Debug\netcoreapp2.1\front.csproj.CoreCompileInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\obj\Debug\netcoreapp2.1\front.AssemblyInfoInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\obj\Debug\netcoreapp2.1\front.AssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\obj\Debug\netcoreapp2.1\front.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Queues\front\obj\Debug\netcoreapp2.1\front.pdb

@@ -12,10 +12,10 @@ namespace Company.Function
         public static void Run(
             [BlobTrigger("files/{name}", Connection = "musicplayersg_STORAGE")]Stream myBlob, 
             string name, 
-            [CosmosDB("files", "files", Id = "id", ConnectionStringSetting="musicplayerdbcosmos_DOCUMENTDB")]out CustomFile document,
+            [CosmosDB("files", "files", Id = "id", ConnectionStringSetting="musicplayerdbcosmos_DOCUMENTDB")]out dynamic document,
             ILogger log)
         {
-            document = new CustomFile{
+            document = new {
                 BlobName = name,
                 BlobLength = myBlob.Length
             };
