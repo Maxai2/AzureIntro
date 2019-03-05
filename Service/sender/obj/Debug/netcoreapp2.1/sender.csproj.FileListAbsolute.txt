@@ -1,0 +1,11 @@
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\bin\Debug\netcoreapp2.1\sender.deps.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\bin\Debug\netcoreapp2.1\sender.runtimeconfig.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\bin\Debug\netcoreapp2.1\sender.runtimeconfig.dev.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\bin\Debug\netcoreapp2.1\sender.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\bin\Debug\netcoreapp2.1\sender.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\obj\Debug\netcoreapp2.1\sender.csprojAssemblyReference.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\obj\Debug\netcoreapp2.1\sender.csproj.CoreCompileInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\obj\Debug\netcoreapp2.1\sender.AssemblyInfoInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\obj\Debug\netcoreapp2.1\sender.AssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\obj\Debug\netcoreapp2.1\sender.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\sender\obj\Debug\netcoreapp2.1\sender.pdb

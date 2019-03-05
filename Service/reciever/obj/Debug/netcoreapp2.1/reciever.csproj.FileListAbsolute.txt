@@ -1,0 +1,11 @@
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\bin\Debug\netcoreapp2.1\reciever.deps.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\bin\Debug\netcoreapp2.1\reciever.runtimeconfig.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\bin\Debug\netcoreapp2.1\reciever.runtimeconfig.dev.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\bin\Debug\netcoreapp2.1\reciever.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\bin\Debug\netcoreapp2.1\reciever.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\obj\Debug\netcoreapp2.1\reciever.csprojAssemblyReference.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\obj\Debug\netcoreapp2.1\reciever.csproj.CoreCompileInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\obj\Debug\netcoreapp2.1\reciever.AssemblyInfoInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\obj\Debug\netcoreapp2.1\reciever.AssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\obj\Debug\netcoreapp2.1\reciever.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\Service\reciever\obj\Debug\netcoreapp2.1\reciever.pdb
