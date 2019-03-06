@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.ServiceBus;
+using Newtonsoft.Json;
 using VideoConverter.Api.Extensions;
 using VideoConverter.Api.Models;
 using VideoConverter.Api.Services;
@@ -24,16 +27,33 @@ namespace VideoConverter.Api.Controllers {
             return (await _tracksService.Get ()).AsList ();
         }
 
+        [HttpPost ("Info")]
+        public async Task<IActionResult> Info ([FromBody] Track track) {
+            await _tracksService.Add(track);
+            return Ok ("okay");
+        }
+
         [HttpPost]
         public async Task<ActionResult<Track>> Upload ([FromBody] string code) {
-            var converted = await _extractor.Extract (code);
-            if (converted != null) {
-                var t = await _tracksService.UploadTrackAsync (converted);
-                if (t != null) {
-                    return Created (t.AudioUrl, t);
-                }
-            }
-            return BadRequest ("Unexpected internal fatal chto-to poshlo ne tak");
+            // var converted = await _extractor.Extract (code);
+            // if (converted != null) {
+            //     var t = await _tracksService.UploadTrackAsync (converted);
+            //     if (t != null) {
+            //         return Created (t.AudioUrl, t);
+            //     }
+            // }
+            QueueClient client = new QueueClient ("Endpoint=sb://musicplayerserviceprice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qTMNt1QDuDZ3mceg4U2svmoHJiXO5wopAw/qSlZj5mY=", "convertqueue");
+            var data = new {
+                UserId = "test",
+                Code = code
+            };
+            var json = JsonConvert.SerializeObject (data);
+            var bytes = Encoding.UTF8.GetBytes (json);
+            var msg = new Message (bytes);
+            // msg.UserProperties.Add ("encoding", Encoding.UTF8.EncodingName);
+            await client.SendAsync (msg);
+            return Ok ("okay");
+            // return BadRequest ("Unexpected internal fatal chto-to poshlo ne tak");
         }
     }
 }

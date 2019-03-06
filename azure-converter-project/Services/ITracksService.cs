@@ -9,9 +9,10 @@ namespace VideoConverter.Api.Services {
     public interface ITracksService {
         Task<Track> UploadTrackAsync (ConvertedItem converted);
         Task<IEnumerable<Track>> Get ();
-        Task<Track> Get(string id);
+        Task<Track> Get (string id);
         Task<IEnumerable<Track>> Get (Expression<Func<Track, bool>> predicate);
-        Task<bool> Remove(string id);
-        Task<Track> Update(Track track);
+        Task<bool> Remove (string id);
+        Task<Track> Update (Track track);
+        Task Add (Track track);
     }
 }

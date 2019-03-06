@@ -22,6 +22,10 @@ namespace VideoConverter.Api.Services {
             _cache = cache;
         }
 
+        public Task Add (Track track) {
+            return _repository.Create (track);
+        }
+
         public async Task<IEnumerable<Track>> Get () {
             IEnumerable<Track> tracks = null;
             var json = await _cache.GetStringAsync ("tracks");
@@ -66,6 +70,7 @@ namespace VideoConverter.Api.Services {
         }
 
         public async Task<Track> UploadTrackAsync (ConvertedItem converted) {
+
             Track track = new Track {
                 Title = converted.Title,
                 VideoUrl = converted.VideoUrl
