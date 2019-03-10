@@ -2276,7 +2276,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "aSTPL94NloSiQVL5Len8wbjFKOnoAX/vOh3s3DF6g3c7GUUMLCDvnBhmA72M2iN2AedyA8hpr7m89kzSAKUnJQ==",
+      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
@@ -3151,7 +3151,7 @@
       ]
     },
     "System.Diagnostics.DiagnosticSource/4.4.1": {
-      "sha512": "DfmSEfJLAfs+iVaQhxUJEh57N2ubV+nd00Xsob2tnC+XwasndKazMjhDYdYMW7UZ6tmyBTxuR5uEx0ov4AaVsQ==",
+      "sha512": "HpRPX7MklDJFmQa62J8YCE6ErlWbxuIYypvaH7H4LVWgbd8s0UcfMs6E6BQns1VfWdgXgS7gjGC24v8agyEvOg==",
       "type": "package",
       "path": "system.diagnostics.diagnosticsource/4.4.1",
       "files": [
@@ -6281,23 +6281,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mahm_iz81\\.nuget\\packages\\": {},
+    "C:\\Users\\Joker\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mahm_iz81\\Documents\\AzureIntro\\Service\\reciever\\reciever.csproj",
+      "projectUniqueName": "d:\\VsProj\\AzureIntro\\Service\\reciever\\reciever.csproj",
       "projectName": "reciever",
-      "projectPath": "C:\\Users\\Mahm_iz81\\Documents\\AzureIntro\\Service\\reciever\\reciever.csproj",
-      "packagesPath": "C:\\Users\\Mahm_iz81\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mahm_iz81\\Documents\\AzureIntro\\Service\\reciever\\obj\\",
+      "projectPath": "d:\\VsProj\\AzureIntro\\Service\\reciever\\reciever.csproj",
+      "packagesPath": "C:\\Users\\Joker\\.nuget\\packages\\",
+      "outputPath": "d:\\VsProj\\AzureIntro\\Service\\reciever\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mahm_iz81\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joker\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
