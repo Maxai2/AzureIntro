@@ -1,0 +1,14 @@
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.csprojAssemblyReference.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.csproj.CoreCompileInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.RazorAssemblyInfo.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.RazorAssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.AssemblyInfoInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.AssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\bin\Debug\netcoreapp2.2\DocServer.deps.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\bin\Debug\netcoreapp2.2\DocServer.runtimeconfig.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\bin\Debug\netcoreapp2.2\DocServer.runtimeconfig.dev.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\bin\Debug\netcoreapp2.2\DocServer.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\bin\Debug\netcoreapp2.2\DocServer.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.RazorTargetAssemblyInfo.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\DocumentWithSignalR\DocServer\obj\Debug\netcoreapp2.2\DocServer.pdb

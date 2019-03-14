@@ -1,0 +1,15 @@
+<div *ngIf="!connected">
+  <input type="text" [(ngModel)]="room" />
+  <button (click)="connect()">connect</button>
+</div>
+<div>
+  <input type="text" [(ngModel)]="text" />
+  <button (click)="send()">send</button>
+</div>
+<div>
+  <ul>
+    <li *ngFor="let msg of messages">
+      <h6>{{ msg.text }}</h6>
+    </li>
+  </ul>
+</div>
