@@ -32,7 +32,7 @@ import { ChatGuard } from './guards/chat.guard';
       validateAuthority: false,
       popUp: true,
       cacheLocation: 'localStorage',
-      redirectUri: 'https://localhost:4200',
+      redirectUri: 'http://localhost:4200',
       navigateToLoginRequestUrl: true
     }),
     RouterModule.forRoot([
