@@ -257,6 +257,23 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.AzureADB2C.UI/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Views.dll": {},
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Views.dll": {},
+          "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Cookies/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4523,6 +4540,20 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Abstractions.xml",
         "microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.AzureADB2C.UI/2.2.0": {
+      "sha512": "Nd1qs+zaQstCC7zkefz1P3pVCM9FV31OO4X2M82OMYKojVk/VOrlA/0L5r0XBZxik9J2DrFAwAs9kkqvHXfu5w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.azureadb2c.ui/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Views.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.AzureADB2C.UI.xml",
+        "microsoft.aspnetcore.authentication.azureadb2c.ui.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.azureadb2c.ui.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Cookies/2.2.0": {
@@ -12067,6 +12098,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
+      "Microsoft.AspNetCore.Authentication.AzureADB2C.UI >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.AspNetCore.SignalR >= 1.1.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -12118,6 +12150,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Authentication.AzureADB2C.UI": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",

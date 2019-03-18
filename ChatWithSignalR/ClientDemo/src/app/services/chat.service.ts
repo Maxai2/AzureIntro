@@ -3,6 +3,7 @@ import { UserService } from 'src/app/services/user.service';
 import { Message } from './../models/message';
 import { Injectable } from '@angular/core';
 import { HubConnection, HubConnectionBuilder } from '@aspnet/signalr';
+import { MsalService } from '@azure/msal-angular';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,10 @@ export class ChatService {
   private messages = new Array<Message>();
   private connection: HubConnection;
   private room: string;
-  constructor(private userService: UserService) {
-  }
+  constructor(
+    private userService: UserService,
+    private authService: MsalService
+    ) { }
 
   public connect(room: string) {
     this.room = room;
@@ -20,7 +23,10 @@ export class ChatService {
 
     this.connection = new HubConnectionBuilder()
       .withUrl(url, {
-        accessTokenFactory: () => this.userService.token
+        // accessTokenFactory: () => this.userService.token
+        accessTokenFactory: () => {
+          return this.authService.getCachedTokenInternal([]).token;
+        }
       })
       .build();
     this.connection.on('ReceiveMessage', this.receiveMessage.bind(this));
