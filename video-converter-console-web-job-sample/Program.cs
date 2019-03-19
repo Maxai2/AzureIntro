@@ -4,6 +4,7 @@ using ConverterApp.Interfaces;
 using ConverterApp.Services;
 using Microsoft.Extensions.Configuration;
 using Refit;
+using Microsoft.Azure.Services.AppAuthentication;
 
 namespace ConverterApp {
     class Program {
@@ -12,7 +13,7 @@ namespace ConverterApp {
                 .SetBasePath (Directory.GetCurrentDirectory ())
                 .AddJsonFile ("appsettings.json", true, true)
                 .Build ();
-            System.Console.WriteLine(config["blob:connectionString"]);
+            // System.Console.WriteLine(config["blob:connectionString"]);
             new Converter (
                 audioExtractor: new AudioExtractor (),
                 blobService: new BlobService (
