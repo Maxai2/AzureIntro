@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using azure_converter_project.SignalR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -93,6 +94,7 @@ namespace VideoConverter.Api {
             services.AddSingleton<CosmosDbOptions> (GetCosmosDbOptions ());
 
             services.AddMvc ().SetCompatibilityVersion (CompatibilityVersion.Version_2_1);
+            services.AddSignalR ();
         }
 
         public void Configure (IApplicationBuilder app, IHostingEnvironment env) {
@@ -104,6 +106,9 @@ namespace VideoConverter.Api {
 
             app.UseCors (o => o.AllowAnyHeader ().AllowAnyMethod ().AllowAnyOrigin ());
 
+            app.UseSignalR (routes => {
+                routes.MapHub<CustomHub> ("/hub");
+            });
             app.UseMvc ();
         }
     }

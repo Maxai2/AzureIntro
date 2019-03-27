@@ -12,3 +12,17 @@ D:\VSProj\AzureIntro\videoConverterWebJobMP\bin\Debug\netcoreapp2.1\videoConvert
 D:\VSProj\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.RazorTargetAssemblyInfo.cache
 D:\VSProj\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.dll
 D:\VSProj\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\bin\Debug\netcoreapp2.1\videoConverterWebJobMP.deps.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\bin\Debug\netcoreapp2.1\videoConverterWebJobMP.runtimeconfig.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\bin\Debug\netcoreapp2.1\videoConverterWebJobMP.runtimeconfig.dev.json
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\bin\Debug\netcoreapp2.1\videoConverterWebJobMP.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\bin\Debug\netcoreapp2.1\videoConverterWebJobMP.pdb
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.csprojAssemblyReference.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.csproj.CoreCompileInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.RazorAssemblyInfo.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.RazorAssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.AssemblyInfoInputs.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.AssemblyInfo.cs
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.RazorTargetAssemblyInfo.cache
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.dll
+C:\Users\Mahm_iz81\Documents\AzureIntro\videoConverterWebJobMP\obj\Debug\netcoreapp2.1\videoConverterWebJobMP.pdb

@@ -74,21 +74,10 @@ namespace videoConverterWebJobMP
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                new Converter
-                (
-                    audioExtractor: new AudioExtractor(),
-                    blobService: new BlobService(
-                        connectionString: GetBlobString().BlobSecret,
-                        rootContainerName: GetBlobString().ContainerName
-                    ),
-                    logger: new Serilogger(),
-                    tracksApi: RestService.For<ITracksApi>(GetApiUrl()),
-                    serviceBusConnectionString: GetServiceBusString().ServiceBusSecret,
-                    queueName: GetServiceBusString().QueueName
-                ).SubscribeAndListen().GetAwaiter().GetResult();
-            });
+            // app.Run(async (context) =>
+            // {
+                
+            // });
         }
     }
 }

@@ -41,6 +41,7 @@ export class PlayerComponent implements OnInit {
   constructor(private trackService: TrackService) {}
 
   async ngOnInit() {
+    this.trackService.connect();
     this.tracks = await this.trackService.getAll();
     this.audio.ontimeupdate = () => {
       this.position = (this.audio.currentTime / this.audio.duration) * 3000;

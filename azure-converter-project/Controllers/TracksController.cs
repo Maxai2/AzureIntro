@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using azure_converter_project.SignalR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Azure.ServiceBus;
 using Newtonsoft.Json;
 using VideoConverter.Api.Extensions;
@@ -16,10 +18,14 @@ namespace VideoConverter.Api.Controllers {
     public class TracksController : ControllerBase {
         private readonly ITracksService _tracksService;
         private readonly IYoutubeAudioExtractor _extractor;
+        private readonly IHubContext<CustomHub, ITracksDisplay> _hub;
+
         public TracksController (ITracksService tracksService,
-            IYoutubeAudioExtractor extractor) {
+            IYoutubeAudioExtractor extractor,
+            IHubContext<CustomHub, ITracksDisplay> hub) {
             _tracksService = tracksService;
             _extractor = extractor;
+            _hub = hub;
         }
 
         [HttpGet]
@@ -29,7 +35,8 @@ namespace VideoConverter.Api.Controllers {
 
         [HttpPost ("Info")]
         public async Task<IActionResult> Info ([FromBody] Track track) {
-            await _tracksService.Add(track);
+            await _tracksService.Add (track);
+            _hub.Clients.User(track.UserId).RecieveTrack(track);
             return Ok ("okay");
         }
 
@@ -42,7 +49,7 @@ namespace VideoConverter.Api.Controllers {
             //         return Created (t.AudioUrl, t);
             //     }
             // }
-            QueueClient client = new QueueClient ("Endpoint=sb://musicplayerserviceprice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qTMNt1QDuDZ3mceg4U2svmoHJiXO5wopAw/qSlZj5mY=", "convertqueue");
+            QueueClient client = new QueueClient ("Endpoint=sb://musicplayerservicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=CTyqAAykXEnWSrJhriOUi4zzCAceMXycvnM8WH2ri98=", "convertqueue");
             var data = new {
                 UserId = "test",
                 Code = code

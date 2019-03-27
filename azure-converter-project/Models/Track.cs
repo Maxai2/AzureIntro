@@ -16,5 +16,8 @@ namespace VideoConverter.Api.Models {
 
         [JsonProperty ("audioUrl")]
         public string AudioUrl { get; set; }
+
+        [JsonProperty ("userId")]
+        public string UserId { get; set; }
     }
 }

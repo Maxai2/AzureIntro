@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Include Include="appsettings.json"/>
   </ItemGroup>
 
   <ItemGroup>

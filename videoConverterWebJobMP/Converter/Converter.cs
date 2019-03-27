@@ -60,7 +60,8 @@ namespace ConverterApp {
                     VideoUrl = convertedItem.VideoUrl,
                         AudioUrl = url,
                         Title = convertedItem.Title,
-                        Album = null
+                        Album = null,
+                        UserId = videoQueueItem.UserId
                 });
             } catch (Exception ex) {
                 _logger.Error (ex.Message);
