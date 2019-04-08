@@ -104,7 +104,7 @@ namespace VideoConverter.Api {
                 app.UseHsts ();
             }
 
-            app.UseCors (o => o.AllowAnyHeader ().AllowAnyMethod ().AllowAnyOrigin ());
+            app.UseCors (o => o.AllowAnyHeader ().AllowAnyMethod ().WithOrigins ("http://localhost:4200").AllowCredentials());
 
             app.UseSignalR (routes => {
                 routes.MapHub<CustomHub> ("/hub");

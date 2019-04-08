@@ -12,7 +12,7 @@ namespace azure_converter_project.SignalR
 
         public override Task OnConnectedAsync()
         {
-            connections.Add(this.Context.UserIdentifier, this.Context.ConnectionId);
+           // connections.Add(this.Context.UserIdentifier, this.Context.ConnectionId);
             return Task.CompletedTask;
         }
 

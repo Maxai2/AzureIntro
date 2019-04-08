@@ -36,7 +36,7 @@ namespace VideoConverter.Api.Controllers {
         [HttpPost ("Info")]
         public async Task<IActionResult> Info ([FromBody] Track track) {
             await _tracksService.Add (track);
-            _hub.Clients.User(track.UserId).RecieveTrack(track);
+            await _hub.Clients.User(track.UserId).RecieveTrack(track);
             return Ok ("okay");
         }
 
